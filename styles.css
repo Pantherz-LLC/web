@@ -1,0 +1,45 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: black; /* Background of the night sky */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.logo {
+    max-width: 200px; /* Adjust the size as needed */
+    height: auto;
+}
+
+
+/* Styles for the "Coming 2024" text */
+.coming-soon {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: white;
+    font-size: 12PX; /* Adjust the font size as needed */
+    z-index: 20; /* Ensure it is above the canvas */
+    font-family: 'Arial', sans-serif; /* Use a clear, sans-serif font */
+}
